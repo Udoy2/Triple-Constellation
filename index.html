@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Under Construction</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styling */
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    /* Centered Container */
+    .container {
+      text-align: center;
+      color: #fff;
+      animation: fadeIn 1s ease-out;
+    }
+
+    /* Emoji with Pulse Effect */
+    .emoji {
+      font-size: 6rem;
+      display: inline-block;
+      animation: pulse 1.5s infinite;
+    }
+
+    /* Under Construction Text */
+    h1 {
+      font-size: 3rem;
+      margin: 1rem 0;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+
+    /* Background Animation */
+    @keyframes backgroundAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Background Gradient Animation */
+    body {
+      background-size: 200% 200%;
+      animation: backgroundAnimation 8s ease infinite;
+    }
+
+    /* Pulse Animation */
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    /* Fade In Animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="emoji">🚧</div>
+    <h1>Under Construction</h1>
+    <p>We're working hard to bring you something amazing!<br>Please check back soon.</p>
+  </div>
+</body>
+</html>
